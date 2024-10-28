@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Chandosos - Cuidado experto para tu mascota</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgb(34, 49, 255), rgba(255, 255, 255, 0.5));
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-600">🐾 Veterinaria Chandosos</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-black-700 hover:text-blue-600">Inicio</a>
+                    <a href="#servicios" class="text-black-700 hover:text-blue-600">Servicios</a>
+                    <a href="#contacto" class="text-black-700 hover:text-blue-600">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero h-96 flex items-center justify-center text-center">
+        <div class="text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Cuidamos a tus mejores amigos</h1>
+            <p class="text-xl mb-8">Atención veterinaria profesional y todo con amor</p>
+            <a href="#contacto" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">
+                Agenda una cita
+            </a>
+        </div>
+    </div>
+
+    <section id="servicios" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl mb-4">💉</div>
+                    <h3 class="text-xl font-semibold mb-2">Vacunación</h3>
+                    <p class="text-gray-600">Mantenemos a tu mascota protegida con nuestro programa completo de vacunación.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl mb-4">🏥</div>
+                    <h3 class="text-xl font-semibold mb-2">Consultas</h3>
+                    <p class="text-gray-600">Atención médica general y especializada para todo tipo de mascotas.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl mb-4">✂️</div>
+                    <h3 class="text-xl font-semibold mb-2">Peluquería</h3>
+                    <p class="text-gray-600">Servicios de peluqueria profesional para mantener a tu mascota limpia y hermosa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Horarios de Atención</h2>
+            <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+                <div class="space-y-4">
+                    <div class="flex justify-between">
+                        <span class="font-semibold">Lunes - Viernes</span>
+                        <span>9:00AM - 10:00PM</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-semibold">Sábados</span>
+                        <span>9:00AM - 6:00PM</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-semibold">Domingos</span>
+                        <span>10:00AM - 3:00PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contáctanos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Información de contacto</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-center">
+                            <span class="mr-2">📍</span>
+                            Av. Principal 123, Ciudad
+                        </p>
+                        <p class="flex items-center">
+                            <span class="mr-2">📞</span>
+                            3132502730
+                        </p>
+                        <p class="flex items-center">
+                            <span class="mr-2">✉️</span>
+                            vetechandositos@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-black-700 mb-2">Nombre</label>
+                        <input type="text" class="w-full p-2 border rounded-lg" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label class="block text-black-700 mb-2">Email</label>
+                        <input type="email" class="w-full p-2 border rounded-lg" placeholder="tu@email.com">
+                    </div>
+                    <div>
+                        <label class="block text-black-700 mb-2">Mensaje</label>
+                        <textarea class="w-full p-2 border rounded-lg" rows="4" placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <p>© 2024 Veterinaria Chandosos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
